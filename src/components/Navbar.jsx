@@ -34,10 +34,10 @@ const Navbar = () => {
           </Link>
         </Stack>
         <Stack direction="row" alignItems="center" gap="4.18rem">
-          <Link to="#about" smooth>
+          <Link to="#login" smooth>
             Login
           </Link>
-          <Link to="#about" smooth className="signup-btn">
+          <Link to="#auth" smooth className="signup-btn">
             Sign Up
           </Link>
           <Stack display={{ xl: "none" }}>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <Stack
               direction="column"
               alignItems="center"
-              gap="2.5rem"
+              gap="1.3rem"
               className="sidebar"
             >
               <Link to="#about" smooth>
@@ -77,8 +77,8 @@ const Navbar = () => {
             <Stack
               direction="column"
               alignItems="center"
-              gap="2.2rem"
-              mt="2rem"
+              gap="1.3rem"
+              mt="1.3rem"
             >
               <Link to="#about" smooth className="sidebar">
                 Login

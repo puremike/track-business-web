@@ -1,0 +1,19 @@
+.form input {
+  padding: 0.62rem 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid black;
+}
+
+.hero-signup-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 0.625rem 1.5rem;
+}
+
+.hero-signup-btn:hover {
+  color: rgb(234, 161, 161);
+}
