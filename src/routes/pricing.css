@@ -4,3 +4,74 @@
   text-transform: uppercase;
   border-radius: 3px;
 }
+
+.pricing-card-49 {
+  border: 2px solid black;
+  padding: 20px 25px;
+  border-radius: 4px;
+}
+
+.pricing-card-99 {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  box-shadow: 2px 2px 8px rgb(40, 3, 3);
+  padding: 20px 25px;
+  border-radius: 4px;
+}
+
+.pricing-card-299 {
+  border: 2px solid black;
+  padding: 20px 25px;
+  border-radius: 4px;
+}
+
+.pricing-card-price-49 {
+  font-size: 2.5rem;
+}
+
+.pricing-card-price-99 {
+  font-size: 3rem;
+}
+
+.pricing-card-price-299 {
+  font-size: 3rem;
+}
+.pricing-card-cta {
+  margin-top: 15rem;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.625rem 1.938rem;
+  text-align: center;
+}
+
+.pricing-card-cta:hover {
+  color: rgb(234, 161, 161);
+}
+
+.pricing-card-cta-99 {
+  margin-top: 7.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.625rem 1.938rem;
+  text-align: center;
+}
+
+.pricing-card-cta-99:hover {
+  color: rgb(243, 83, 83);
+}
+
+.pricing-card-cta-299 {
+  margin-top: 7.5rem;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.625rem 1.938rem;
+  text-align: center;
+}
+
+.pricing-card-cta-299:hover {
+  color: rgb(234, 161, 161);
+}

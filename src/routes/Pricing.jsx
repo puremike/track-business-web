@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import ManSitting from "../assets/images/man-sitting.png";
 import "./pricing.css";
+import PricingCard from "../components/PricingCard";
 
 const Pricing = () => {
   return (
@@ -42,7 +43,9 @@ const Pricing = () => {
         </Stack>
       </Stack>
 
-      <Box></Box>
+      <Box mb="3rem">
+        <PricingCard />
+      </Box>
     </Box>
   );
 };
