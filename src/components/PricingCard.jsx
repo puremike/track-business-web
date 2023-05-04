@@ -6,17 +6,17 @@ import WhiteDot from "../assets/icons/dotwhite.png";
 
 const PricingCard = () => {
   return (
-    <Box mt="2rem" p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}>
+    <Box mt="2rem" p={{ xl: "0 8.75rem" }}>
       <Stack
         direction="column"
-        p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+        p={{ xs: "0 2.2rem", md: "0 5rem", lg: "0 8.75rem" }}
       >
+        {/* Small-medium-large-extra large device breakpoints */}
         <Stack
           direction={{ sm: "row" }}
           display={{ xs: "none", sm: "flex" }}
-          gap="3rem"
-          width="100%"
-          minHeight="700px"
+          gap={{ sm: "1rem", md: "1.2rem", lg: "2rem", xl: "6.375rem" }}
+          minHeight="644px"
         >
           <Stack
             direction="column"
@@ -69,7 +69,7 @@ const PricingCard = () => {
             direction="column"
             gap="1.6rem"
             className="pricing-card-99"
-            width="436px"
+            width={{ sm: "436px" }}
           >
             <Typography fontFamily="Space Grotesk" fontWeight="bold" mt="2rem">
               <span className="pricing-card-price-99">$99</span> per month
@@ -136,7 +136,7 @@ const PricingCard = () => {
             direction="column"
             gap="1.6rem"
             className="pricing-card-299"
-            width="436px"
+            width={{ sm: "436px" }}
           >
             <Typography fontFamily="Space Grotesk" fontWeight="bold" mt="2rem">
               <span className="pricing-card-price-299">$299</span> per month
@@ -200,18 +200,18 @@ const PricingCard = () => {
           </Stack>
         </Stack>
 
+        {/* Mobile Version Price Card */}
         <Stack
           direction={{ xs: "column" }}
           display={{ xs: "flex", sm: "none" }}
           gap="3rem"
-          width="100%"
-          minHeight="700px"
+          minHeight="540px"
         >
           <Stack
             direction="column"
             gap="1.6rem"
             className="pricing-card-49"
-            width="436px"
+            width="320px"
           >
             <Typography fontFamily="Space Grotesk" fontWeight="bold" mt="2rem">
               <span className="pricing-card-price-49">$49</span> /mo
@@ -258,7 +258,7 @@ const PricingCard = () => {
             direction="column"
             gap="1.6rem"
             className="pricing-card-99"
-            width="436px"
+            width="320px"
           >
             <Typography fontFamily="Space Grotesk" fontWeight="bold" mt="2rem">
               <span className="pricing-card-price-99">$99</span> /mo
@@ -325,7 +325,7 @@ const PricingCard = () => {
             direction="column"
             gap="1.6rem"
             className="pricing-card-299"
-            width="436px"
+            width="320px"
           >
             <Typography fontFamily="Space Grotesk" fontWeight="bold" mt="2rem">
               <span className="pricing-card-price-299">$299</span> /mo

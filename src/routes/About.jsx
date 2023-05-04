@@ -15,7 +15,7 @@ const About = () => {
         <img
           src={WomanRolling}
           alt="woman and globe"
-          width="500px"
+          width={{ xs: "370px", sm: "500px" }}
           height="432px"
         />
         <Stack>

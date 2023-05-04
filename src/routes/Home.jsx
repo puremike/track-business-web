@@ -10,6 +10,7 @@ import "./home.css";
 import About from "./About";
 import HowItWorks from "./HowItWorks";
 import Pricing from "./Pricing";
+import FAQs from "./FAQs";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Box
         mt={{ xs: "1rem", sm: "5rem" }}
         p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+        alignContent="center"
       >
         <Stack
           className="hero-section"
@@ -28,7 +30,7 @@ const Home = () => {
             <Typography
               fontFamily="Space Grotesk"
               fontWeight={500}
-              fontSize={{ xs: "4rem", md: "4.7rem", lg: "4.9rem" }}
+              fontSize={{ xs: "3rem", md: "4.7rem", lg: "4.9rem" }}
             >
               Always Track <br /> & Analyze <br /> Your Business <br />{" "}
               Statistics
@@ -64,7 +66,7 @@ const Home = () => {
           <img
             src={LadderImage}
             alt="man climbing a ladder"
-            width="550px"
+            width={{ xs: "330px", sm: "550px" }}
             height="580px"
           />
         </Stack>
@@ -72,6 +74,7 @@ const Home = () => {
       <About />
       <HowItWorks />
       <Pricing />
+      <FAQs />
     </div>
   );
 };

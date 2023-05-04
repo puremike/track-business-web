@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 360,
+      xs: 0,
       sm: 1024,
       md: 1100,
       lg: 1400,

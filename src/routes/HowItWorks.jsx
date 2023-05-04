@@ -142,7 +142,7 @@ const HowItWorks = () => {
         <img
           src={WomanSpanner}
           alt="woman and globe"
-          width="490px"
+          width={{ xs: "280px", sm: "490px" }}
           height="700px"
         />
       </Stack>
