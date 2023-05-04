@@ -4,3 +4,7 @@
   text-transform: uppercase;
   border-radius: 3px;
 }
+
+img {
+  cursor: pointer;
+}

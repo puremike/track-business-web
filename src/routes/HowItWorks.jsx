@@ -143,7 +143,7 @@ const HowItWorks = () => {
           src={WomanSpanner}
           alt="woman and globe"
           width={{ xs: "280px", sm: "490px" }}
-          height="700px"
+          eight="700px"
         />
       </Stack>
     </Box>

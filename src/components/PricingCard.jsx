@@ -17,6 +17,7 @@ const PricingCard = () => {
           display={{ xs: "none", sm: "flex" }}
           gap={{ sm: "1rem", md: "1.2rem", lg: "2rem", xl: "6.375rem" }}
           minHeight="644px"
+          justifyContent="center"
         >
           <Stack
             direction="column"
@@ -206,6 +207,7 @@ const PricingCard = () => {
           display={{ xs: "flex", sm: "none" }}
           gap="3rem"
           minHeight="540px"
+          justifyContent="center"
         >
           <Stack
             direction="column"

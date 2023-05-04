@@ -18,7 +18,6 @@ const Home = () => {
       <Box
         mt={{ xs: "1rem", sm: "5rem" }}
         p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
-        alignContent="center"
       >
         <Stack
           className="hero-section"
