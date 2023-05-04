@@ -8,18 +8,27 @@ import MCard from "../assets/images/mastercard.png";
 import PayPalImage from "../assets/images/paypal.png";
 import "./home.css";
 import About from "./About";
+import HowItWorks from "./HowItWorks";
+import Pricing from "./Pricing";
 
 const Home = () => {
   return (
     <div>
-      <Box mt="5rem" p="0 2rem">
-        <Stack className="hero-section" direction="row">
+      <Box
+        mt={{ xs: "1rem", sm: "5rem" }}
+        p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+      >
+        <Stack
+          className="hero-section"
+          direction={{ xs: "column", sm: "row" }}
+          gap={{ xl: "21.625rem" }}
+          justifyContent="center"
+        >
           <Stack>
             <Typography
               fontFamily="Space Grotesk"
               fontWeight={500}
-              fontSize="4.375rem"
-              lineHeight="5rem"
+              fontSize={{ xs: "4rem", md: "4.7rem", lg: "4.9rem" }}
             >
               Always Track <br /> & Analyze <br /> Your Business <br />{" "}
               Statistics
@@ -61,6 +70,8 @@ const Home = () => {
         </Stack>
       </Box>
       <About />
+      <HowItWorks />
+      <Pricing />
     </div>
   );
 };
