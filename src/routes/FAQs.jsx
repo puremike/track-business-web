@@ -2,18 +2,10 @@ import { React, useContext, useState, useRef } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { DisplayContexts } from "../contexts/DisplayContexts";
 
-import DashIcon from "../assets/icons/dash.png";
-import PlusIcon from "../assets/icons/plus.png";
+import { iconURL } from "../iconurl";
 import "./faqs.css";
 import ManTalkingImage from "../assets/images/man-talking.png";
 import "animate.css";
-
-const iconURL = {
-  plusIconUrl:
-    "https://lh3.googleusercontent.com/ygBEBl-hoArYYZ7PyMZMFqLapFqepp47WMCJ2ftJaadki-q9WHZBo_Uqq5f6kz7_3pE9Ux52hRi0ygg7SYsCqiS_f_BwMF2GNHgemWCiK8e2JJ4iMgwlLyEPwyUTF4zFu3bLUeJefAykVJNi1bw5e0p2xDs9yn7zndE6ReduDrw9CbnMLquqC4pVyNpyxuCSwB_ssSj2k2bncpGkXK3ucJfdS2zG4CYDmI-LlZDaafS16AaJqbUvwoI_tBB4dUEIlN-P5Ieedgf5bKl-_WIx5IAcq5E8J2h0EAie8NYuJgblZoH1-pJsKhp8Hs2O-rEDhq2eKvBH6raja4vNdxr7_nQ38sZ5Bg_a9hL14lbSYCDjXFvRJF94jyns0AKkGoCQKIzhhTBbQJ_PRcCQJJqb3ToIGtg7NJM-Wz0DGuz4PPwGRj9dkvSAleSt-UpBT0zjYkW7S0oHizp3hkMRR-SUhLdyfl_-BRkIJ42zRw0AM3vdRPtqLyLh-UM9K7m4y_1-KTS80NGM3bd-qrGEKrntFhWwugx0tQtLYpGHbjtcr9qFW9NF9fai_ZT8HVV89kDvld9_kGptRN9ZXCIT-iDm9g8NqCLDR6-_wQaLlvHBnAQJ2w5GnpHpO6a3p8HfVw9-Rll98JW7VLTSiuSnzrBKXaUAWvrnD_GNKWrQaQ2NqajC5i24K9PtlvIyaDOQ-fwc0yIWsMO3-UvTtxFjpKF-GYaxGAmSzFH7MXODzdZVIxkXJOF_G07m8Vo-dJhWWyZdmBugIM_UJGj8mhjoQWWcddC2qtYsLECQuWuYykyTKY-7Lxeq9P58-L9cGwurlI3jNMt9uMJRk_kNcIuKeq3YwlSOmupT3YUTzvxe16UmLAVtfbGM39ZivlNUolqOjsIZNNDCB-cz2Ut6kSpmYWn3pibv0LLJ6LWbJAG9gUfjtCQ=w28-h28-s-no?authuser=0",
-  dashIconUrl:
-    "https://lh3.googleusercontent.com/s17UqJNkYBBo7YN1cZEVXLG9Ng8d_jXDogy5165qyQIu0hlcugI3SGqsVJ49TmlHmb25EGovK_sKvFwozxAAxjUrT5XGSFySpUxKkeZ4_UnwwljrNQbif6qAEcPVOlDAjtO6eGetCKnv1wMUvbsTOrI1cQcsqG2lfC1FDEiNc83F8w2T1umGXeIRGQgp_j1Mfweyg9ScLl-t1SGgVWId2ElC3dQwNVGblvz453g9G7XC5IlfrEUtqSNRzhHuyN2PngOWi53u-qF9MuLUpcMIIHcoJullirrCQxF_2CkDwa73KgzysFEnUKE-9QpYRMua-NrWm87M8rhOSyJbZgVa7Q2c5aU7dvoGOEVAPPmzxtWlULkin6GScQHrbTzsu-9CVc9X9hOoy8l33-mRPJac-8-HvXX7ayhwU3Mf93VGVQWe2p-cG7xbVG3BHdBWnbpamLeJkMFil8AZinb8-ENv4pLNde6YwsSq-fWntoe-mOtVoSOqiE3h3zFUx_7syDUfgB91DcUm8veP274Wtysi9JVxvvk2_ko9SPgA7DcxdmEB19aIsC_eHPHM1c9M-IphOtpPWVqnxoxC06Qo3lmXrBKoN7zS9p61LMv7aORfDw9rgXNd0WvHwqc9SwxdZ43iS9agbJ3gxLJks385VaDBsY8xmZxzeQQfVR9QepKyZYH2sSgLPzgPvwMHaqMSG3aUIGTbDEkp0IsJy7yzJiu-XogEjwawrFrGarRBM5NyvKIE3MHbmT_R3ve9AYzLDyamMaW_lx4YSue7kwyr26q1tnzrlT3NyN99xt3t8nqGexyjTj_WwWCnofLVl8MxWU-2n7-ASo0T09kFD9VpaSE7YVElaR5vxkFcEoiZtgt8Jwvzqg7fwTGgK3i_V-M_HS9uog7oTpyswjFF15DHehWyYZzBUdV6Tk2QNEmjAIGfPOI=w28-h28-s-no?authuser=0",
-};
 
 const FAQs = () => {
   const { aside, setAside } = useContext(DisplayContexts);
@@ -23,8 +15,9 @@ const FAQs = () => {
   const [aside3, setAside3] = useState("none");
   const [aside4, setAside4] = useState("none");
 
-  //to handle the iconChanges individually
   const { plusIconUrl, dashIconUrl } = iconURL;
+  //to handle the iconChanges individually
+
   const [icon, setIcon] = useState(plusIconUrl);
   const [icon2, setIcon2] = useState(plusIconUrl);
   const [icon3, setIcon3] = useState(plusIconUrl);
@@ -91,16 +84,16 @@ const FAQs = () => {
               />
             </Stack>
             <Typography
+              className="animate-faq"
               fontFamily="Space Grotesk"
               fontSize="1.125rem"
               fontWeight="500"
               display={aside}
             >
-              Contributors are members of your team who need access to use
+              Microsoft Teams is available as part of Microsoft Office 365
               <br />
-              the Mac app to create and edit Sketch documents. These prices
-              don’t include sales <br /> tax, which may still apply. Head over
-              to our pricing page to get full details.
+              subscriptions. Premium plans start at $4.00/user/month <br /> and
+              are subject to an annual commitment.
             </Typography>
           </Stack>
 
@@ -130,6 +123,7 @@ const FAQs = () => {
               />
             </Stack>
             <Typography
+              className="animate-faq"
               fontFamily="Space Grotesk"
               fontSize="1.125rem"
               fontWeight="500"
@@ -167,6 +161,7 @@ const FAQs = () => {
               />
             </Stack>
             <Typography
+              className="animate-faq"
               fontFamily="Space Grotesk"
               fontSize="1.125rem"
               fontWeight="500"
@@ -204,6 +199,7 @@ const FAQs = () => {
               />
             </Stack>
             <Typography
+              className="animate-faq"
               fontFamily="Space Grotesk"
               fontSize="1.125rem"
               fontWeight="500"

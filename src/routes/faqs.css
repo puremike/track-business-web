@@ -8,3 +8,8 @@
 img {
   cursor: pointer;
 }
+
+.animate-faq {
+  animation: pulse;
+  animation-duration: 2s;
+}
