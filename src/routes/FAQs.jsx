@@ -24,7 +24,11 @@ const FAQs = () => {
   const [icon4, setIcon4] = useState(plusIconUrl);
 
   return (
-    <Box mt="6.625rem" p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}>
+    <Box
+      id="faqs"
+      mt="6.625rem"
+      p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+    >
       <Stack
         direction={{ xs: "column", sm: "row" }}
         justifyContent="center"

@@ -7,7 +7,11 @@ import PricingCard from "../components/PricingCard";
 const Pricing = () => {
   return (
     <div>
-      <Box mt="12.5rem" p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}>
+      <Box
+        id="pricing"
+        mt="12.5rem"
+        p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+      >
         <Stack
           direction={{ xs: "column-reverse", sm: "row" }}
           justifyContent="center"

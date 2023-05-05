@@ -17,13 +17,13 @@ const Sidebar = ({ display }) => {
               <Link to="#about" smooth>
                 About us
               </Link>
-              <Link to="how" smooth>
+              <Link to="#how" smooth>
                 How it works
               </Link>
               <Link to="#pricing" smooth>
                 Pricing
               </Link>
-              <Link to="faqs" smooth>
+              <Link to="#faqs" smooth>
                 FAQs
               </Link>
             </Stack>
@@ -33,10 +33,10 @@ const Sidebar = ({ display }) => {
               gap="1.3rem"
               mt="1.3rem"
             >
-              <Link to="#about" smooth className="sidebar">
+              <Link to="#auth" smooth className="sidebar">
                 Login
               </Link>
-              <Link to="#about" smooth className="signup-btn">
+              <Link to="#auth" smooth className="signup-btn">
                 Sign Up
               </Link>
             </Stack>

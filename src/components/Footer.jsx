@@ -21,7 +21,7 @@ const Footer = () => {
         gap={{ xs: "30px", sm: "35px" }}
       >
         <Stack gap="30px">
-          <Link>
+          <Link to="#home" smooth>
             <img src={LogoIcon} alt="logo" width="50px" />
           </Link>
 

@@ -12,7 +12,7 @@ import Sidebar from "./Sidebar";
 const Navbar = () => {
   const { aside, setAside } = useContext(DisplayContexts);
   return (
-    <Box>
+    <Box id="home">
       <Stack
         direction="row"
         alignItems="center"
@@ -33,13 +33,13 @@ const Navbar = () => {
             <Link to="#about" smooth>
               About us
             </Link>
-            <Link to="how" smooth>
+            <Link to="#how" smooth>
               How it works
             </Link>
             <Link to="#pricing" smooth>
               Pricing
             </Link>
-            <Link to="faqs" smooth>
+            <Link to="#faqs" smooth>
               FAQs
             </Link>
           </Stack>
