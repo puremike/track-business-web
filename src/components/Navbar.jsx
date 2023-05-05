@@ -1,4 +1,4 @@
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 import { DisplayContexts } from "../contexts/DisplayContexts";
 import { Box, Stack } from "@mui/material";
 import { HashLink as Link } from "react-router-hash-link";
@@ -11,13 +11,14 @@ import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const { aside, setAside } = useContext(DisplayContexts);
+
   return (
     <Box id="home">
       <Stack
         direction="row"
         alignItems="center"
         justifyContent="space-between"
-        p={{ xs: "2.25rem 2rem", md: "2rem 5rem", lg: "2rem 8.75rem" }}
+        sx={{ p: { xs: "2.25rem 2rem", md: "2rem 5rem", lg: "2rem 8.75rem" } }}
       >
         <Stack direction="row" alignItems="center" gap="2.5rem">
           <Link to="/">

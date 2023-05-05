@@ -11,11 +11,11 @@ import LI from "../assets/icons/li.png";
 
 const Footer = () => {
   return (
-    <Box>
+    <Box
+      sx={{ mt: "5rem", p: { xs: "1.3rem 1.3rem", xl: "2rem 8.75rem" } }}
+      className="footer-section"
+    >
       <Stack
-        className="footer-section"
-        mt="5rem"
-        p={{ xs: "1.3rem 1.3rem", xl: "2rem 8.75rem" }}
         direction={{ xs: "column", md: "row" }}
         justifyContent="space-between"
         gap={{ xs: "30px", sm: "35px" }}
@@ -91,17 +91,13 @@ const Footer = () => {
         </Stack>
       </Stack>
 
-      <Stack
-        p={{ xs: "1.3rem 1.3rem", xl: "2rem 8.75rem" }}
-        className="last-footer"
+      <Typography
+        fontFamily="Space Grotesk"
+        textAlign={{ xs: "left", md: "center" }}
+        mt="3.2rem"
       >
-        <Typography
-          fontFamily="Space Grotesk"
-          textAlign={{ xs: "left", md: "center" }}
-        >
-          © Puremike Design, all rights reserved.
-        </Typography>
-      </Stack>
+        © Puremike Design, all rights reserved.
+      </Typography>
     </Box>
   );
 };

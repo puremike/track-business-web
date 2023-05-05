@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import { Box, Stack, Typography } from "@mui/material";
 import { HashLink as Link } from "react-router-hash-link";
 import LadderImage from "../assets/images/ladder.png";
@@ -16,8 +15,10 @@ const Home = () => {
   return (
     <div>
       <Box
-        mt={{ xs: "1rem", sm: "5rem" }}
-        p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+        sx={{
+          mt: { xs: "1rem", sm: "5rem" },
+          p: { xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" },
+        }}
       >
         <Stack
           className="hero-section"

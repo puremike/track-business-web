@@ -12,8 +12,10 @@ const HowItWorks = () => {
   return (
     <Box
       id="how"
-      mt="6.625rem"
-      p={{ xs: "2rem 2rem", md: "2rem 5rem", lg: "2rem 8.75rem" }}
+      sx={{
+        mt: "6.625rem",
+        p: { xs: "2rem 2rem", md: "2rem 5rem", lg: "2rem 8.75rem" },
+      }}
     >
       <Stack
         direction={{ xs: "column", md: "row" }}

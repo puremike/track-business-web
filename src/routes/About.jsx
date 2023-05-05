@@ -8,8 +8,10 @@ const About = () => {
   return (
     <Box
       id="about"
-      mt="6.625rem"
-      p={{ xs: "2rem 2rem", md: "2rem 5rem", lg: "0 8.75rem" }}
+      sx={{
+        mt: "6.625rem",
+        p: { xs: "2rem 2rem", md: "2rem 5rem", lg: "0 8.75rem" },
+      }}
     >
       <Stack
         direction={{ xs: "column-reverse", md: "row" }}
