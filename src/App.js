@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
-import "./App.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import HowItWorks from "./routes/HowItWorks";
