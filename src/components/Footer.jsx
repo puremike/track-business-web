@@ -78,7 +78,7 @@ const Footer = () => {
             FAQs
           </Link>
         </Stack>
-        <Stack>
+        <Stack gap="15px">
           <Typography fontFamily="Space Grotesk">Lead Generation</Typography>
           <Typography fontFamily="Space Grotesk">
             Customer Engagement

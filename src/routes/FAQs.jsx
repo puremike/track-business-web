@@ -2,7 +2,7 @@ import { React, useContext, useState, useRef } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { DisplayContexts } from "../contexts/DisplayContexts";
 
-import { iconURL } from "../iconurl";
+import { iconURL } from "../iconURLs";
 import "./faqs.css";
 import ManTalkingImage from "../assets/images/man-talking.png";
 import "animate.css";
@@ -27,7 +27,7 @@ const FAQs = () => {
     <Box
       id="faqs"
       mt="6.625rem"
-      p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+      p={{ xs: "2rem 2rem", md: "2rem 5rem", lg: "0 8.75rem" }}
     >
       <Stack
         direction={{ xs: "column", sm: "row" }}

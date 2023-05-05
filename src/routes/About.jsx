@@ -9,7 +9,7 @@ const About = () => {
     <Box
       id="about"
       mt="6.625rem"
-      p={{ xs: "0 2rem", md: "0 5rem", lg: "0 8.75rem" }}
+      p={{ xs: "2rem 2rem", md: "2rem 5rem", lg: "0 8.75rem" }}
     >
       <Stack
         direction={{ xs: "column-reverse", md: "row" }}
@@ -52,7 +52,12 @@ const About = () => {
             <br />
             prototypes and leave feedback for free.
           </Typography>
-          <Stack direction="row" gap="1.813rem" mb="1.625rem">
+          <Stack
+            direction="row"
+            gap="1.813rem"
+            mb="1.625rem"
+            alignItems="center"
+          >
             <img src={DotIcon} alt="dot" />
             <Typography
               fontFamily="Space Grotesk"
@@ -62,7 +67,12 @@ const About = () => {
               Shared Cloud Libraries, for a single source of truth
             </Typography>
           </Stack>
-          <Stack direction="row" gap="1.813rem" mb="1.625rem">
+          <Stack
+            direction="row"
+            gap="1.813rem"
+            mb="1.625rem"
+            alignItems="center"
+          >
             <img src={DotIcon} alt="dot" />
             <Typography
               fontFamily="Space Grotesk"
@@ -72,7 +82,12 @@ const About = () => {
               Prototype previews for user testing and research
             </Typography>
           </Stack>
-          <Stack direction="row" gap="1.813rem" mb="1.625rem">
+          <Stack
+            direction="row"
+            gap="1.813rem"
+            mb="1.625rem"
+            alignItems="center"
+          >
             <img src={DotIcon} alt="dot" />
             <Typography
               fontFamily="Space Grotesk"
@@ -82,7 +97,12 @@ const About = () => {
               Easy organization with projects
             </Typography>
           </Stack>
-          <Stack direction="row" gap="1.813rem" mb="1.625rem">
+          <Stack
+            direction="row"
+            gap="1.813rem"
+            mb="1.625rem"
+            alignItems="center"
+          >
             <img src={DotIcon} alt="dot" />
             <Typography
               fontFamily="Space Grotesk"
@@ -92,7 +112,7 @@ const About = () => {
               Free developer handoff, right inside the browser
             </Typography>
           </Stack>
-          <Stack direction="row" gap="1.813rem" mb="3rem">
+          <Stack direction="row" gap="1.813rem" mb="3rem" alignItems="center">
             <img src={DotIcon} alt="dot" />
             <Typography
               fontFamily="Space Grotesk"
