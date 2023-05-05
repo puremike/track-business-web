@@ -1,3 +1,44 @@
 .footer-section {
   background-color: black;
+  color: rgb(195, 193, 193);
+}
+
+.style-icon img {
+  border: 2px dashed white;
+}
+
+.form input {
+  padding: 0.62rem 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  background-color: black;
+}
+
+.footer-signup-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.625rem 1.5rem;
+}
+
+.footer-signup-btn:hover {
+  color: rgb(234, 161, 161);
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: rgb(195, 193, 193);
+}
+
+.footer-section a:hover {
+  color: rgb(239, 166, 166);
+}
+
+.last-footer {
+  background-color: black;
+  color: rgb(195, 193, 193);
 }

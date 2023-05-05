@@ -7,10 +7,7 @@ import WhiteDot from "../assets/icons/dotwhite.png";
 const PricingCard = () => {
   return (
     <Box mt="2rem" p={{ xl: "0 8.75rem" }}>
-      <Stack
-        direction="column"
-        p={{ xs: "0 2.2rem", md: "0 5rem", lg: "0 8.75rem" }}
-      >
+      <Stack direction="column" p={{ md: "0 5rem", lg: "0 8.75rem" }}>
         {/* Small-medium-large-extra large device breakpoints */}
         <Stack
           direction={{ sm: "row" }}
