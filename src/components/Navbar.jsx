@@ -2,6 +2,7 @@ import { React, useContext, useState } from "react";
 import { DisplayContexts } from "../contexts/DisplayContexts";
 import { Box, Stack } from "@mui/material";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 import Logo from "../assets/icons/logo.svg";
 import MenuIcon from "../assets/icons/menu.svg";
@@ -9,8 +10,24 @@ import MenuIcon from "../assets/icons/menu.svg";
 import "./navbar.css";
 import Sidebar from "./Sidebar";
 
+const iconUrl = {
+  open: "https://img.icons8.com/?size=512&id=58RxaWPffZGK&format=png",
+  close: "https://img.icons8.com/?size=512&id=71200&format=png",
+};
+
+const { open, close } = iconUrl;
+
+const iconHandler = (defaultIcon, newIcon) => {
+  defaultIcon === open ? newIcon(close) : newIcon(open);
+};
+
+const displayHandler = (defaultDisplay, newDisplay) => {
+  defaultDisplay === "none" ? newDisplay("block") : newDisplay("none");
+};
+
 const Navbar = () => {
   const { aside, setAside } = useContext(DisplayContexts);
+  const [menuIcon, setMenuIcon] = useState(open);
 
   return (
     <Box id="home">
@@ -61,11 +78,14 @@ const Navbar = () => {
           </Stack>
 
           <Stack display={{ xs: "block", sm: "none" }}>
-            <img
+            <motion.img
+              whileHover={{ scale: 1.5 }}
+              whileTap={{ scale: 1.5 }}
               onClick={() => {
-                aside === "none" ? setAside("block") : setAside("none");
+                displayHandler(aside, setAside);
+                iconHandler(menuIcon, setMenuIcon);
               }}
-              src={MenuIcon}
+              src={menuIcon}
               className="menu-btn"
               alt="menu-icon"
               width="30px"

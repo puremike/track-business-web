@@ -1,5 +1,6 @@
 export const iconURL = {
-  plusIconUrl:
-    "https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/plus-512.png",
-  dashIconUrl: "https://icon-library.com/images/dash-icon/dash-icon-16.jpg",
+  // open: "https://img.icons8.com/?size=512&id=47817&format=png",
+  // close: "https://img.icons8.com/?size=512&id=47796&format=png",
+  open: "https://img.icons8.com/?size=512&id=44037&format=png",
+  close: "https://img.icons8.com/?size=512&id=44026&format=png",
 };

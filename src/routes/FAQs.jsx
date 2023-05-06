@@ -1,11 +1,10 @@
 import { React, useContext, useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 import { DisplayContexts } from "../contexts/DisplayContexts";
-
 import { iconURL } from "../iconURLs";
 import "./faqs.css";
 import ManTalkingImage from "../assets/images/man-talking.png";
-import "animate.css";
 
 const FAQs = () => {
   const { aside, setAside } = useContext(DisplayContexts);
@@ -15,13 +14,13 @@ const FAQs = () => {
   const [aside3, setAside3] = useState("none");
   const [aside4, setAside4] = useState("none");
 
-  const { plusIconUrl, dashIconUrl } = iconURL;
+  const { open, close } = iconURL;
   //to handle the iconChanges individually
 
-  const [icon, setIcon] = useState(plusIconUrl);
-  const [icon2, setIcon2] = useState(plusIconUrl);
-  const [icon3, setIcon3] = useState(plusIconUrl);
-  const [icon4, setIcon4] = useState(plusIconUrl);
+  const [icon, setIcon] = useState(open);
+  const [icon2, setIcon2] = useState(open);
+  const [icon3, setIcon3] = useState(open);
+  const [icon4, setIcon4] = useState(open);
 
   return (
     <Box
@@ -73,14 +72,16 @@ const FAQs = () => {
               >
                 How much does a teams subscription cost?
               </Typography>
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 onClick={() => {
                   if (aside === "none") {
                     setAside("block");
-                    setIcon(dashIconUrl);
+                    setIcon(close);
                   } else if (aside === "block") {
                     setAside("none");
-                    setIcon(plusIconUrl);
+                    setIcon(open);
                   }
                 }}
                 src={icon}
@@ -89,18 +90,20 @@ const FAQs = () => {
                 height="28px"
               />
             </Stack>
-            <Typography
-              className="animate-faq"
-              fontFamily="Space Grotesk"
-              fontSize="1.125rem"
-              fontWeight="500"
-              display={aside}
-            >
-              Microsoft Teams is available as part of Microsoft Office 365
-              <br />
-              subscriptions. Premium plans start at $4.00/user/month <br /> and
-              are subject to an annual commitment.
-            </Typography>
+            <motion.span whileHover={{ scale: 1.03 }}>
+              <Typography
+                className="animate-faq"
+                fontFamily="Space Grotesk"
+                fontSize="1.125rem"
+                fontWeight="500"
+                display={aside}
+              >
+                Microsoft Teams is available as part of Microsoft Office 365
+                <br />
+                subscriptions. Premium plans start at $4.00/user/month <br />{" "}
+                and are subject to an annual commitment.
+              </Typography>
+            </motion.span>
           </Stack>
 
           <Stack gap="20px" mt="2rem">
@@ -112,14 +115,16 @@ const FAQs = () => {
               >
                 Do I still need to purchase licenses for the Mac app?
               </Typography>
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 onClick={() => {
                   if (aside2 === "none") {
                     setAside2("block");
-                    setIcon2(dashIconUrl);
+                    setIcon2(close);
                   } else if (aside2 === "block") {
                     setAside2("none");
-                    setIcon2(plusIconUrl);
+                    setIcon2(open);
                   }
                 }}
                 src={icon2}
@@ -128,17 +133,19 @@ const FAQs = () => {
                 height="28px"
               />
             </Stack>
-            <Typography
-              className="animate-faq"
-              fontFamily="Space Grotesk"
-              fontSize="1.125rem"
-              fontWeight="500"
-              display={aside2}
-            >
-              License Purchase means the process of granting a software license{" "}
-              <br />
-              by the Licensor to the Licensee through a purchase-type scheme.
-            </Typography>
+            <motion.span whileHover={{ scale: 1.03 }}>
+              <Typography
+                className="animate-faq"
+                fontFamily="Space Grotesk"
+                fontSize="1.125rem"
+                fontWeight="500"
+                display={aside2}
+              >
+                License Purchase means the process of granting a software
+                license <br />
+                by the Licensor to the Licensee through a purchase-type scheme.
+              </Typography>
+            </motion.span>
           </Stack>
 
           <Stack gap="20px" mt="2rem">
@@ -150,14 +157,16 @@ const FAQs = () => {
               >
                 What are the differences between Contributors and Viewers?
               </Typography>
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 onClick={() => {
                   if (aside3 === "none") {
                     setAside3("block");
-                    setIcon3(dashIconUrl);
+                    setIcon3(close);
                   } else if (aside3 === "block") {
                     setAside3("none");
-                    setIcon3(plusIconUrl);
+                    setIcon3(open);
                   }
                 }}
                 src={icon3}
@@ -166,17 +175,19 @@ const FAQs = () => {
                 height="28px"
               />
             </Stack>
-            <Typography
-              className="animate-faq"
-              fontFamily="Space Grotesk"
-              fontSize="1.125rem"
-              fontWeight="500"
-              display={aside3}
-            >
-              When you assign roles to a user group, the individuals in the
-              group <br /> have access to content. If you nest user groups, all
-              the contained <br /> users have permission.
-            </Typography>
+            <motion.span whileHover={{ scale: 1.03 }}>
+              <Typography
+                className="animate-faq"
+                fontFamily="Space Grotesk"
+                fontSize="1.125rem"
+                fontWeight="500"
+                display={aside3}
+              >
+                When you assign roles to a user group, the individuals in the
+                group <br /> have access to content. If you nest user groups,
+                all the contained <br /> users have permission.
+              </Typography>
+            </motion.span>
           </Stack>
 
           <Stack gap="20px" mt="2rem">
@@ -188,14 +199,16 @@ const FAQs = () => {
               >
                 How long does the free Teams subscription trial last?
               </Typography>
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1.2 }}
                 onClick={() => {
                   if (aside4 === "none") {
                     setAside4("block");
-                    setIcon4(dashIconUrl);
+                    setIcon4(close);
                   } else if (aside4 === "block") {
                     setAside4("none");
-                    setIcon4(plusIconUrl);
+                    setIcon4(open);
                   }
                 }}
                 src={icon4}
@@ -204,16 +217,19 @@ const FAQs = () => {
                 height="28px"
               />
             </Stack>
-            <Typography
-              className="animate-faq"
-              fontFamily="Space Grotesk"
-              fontSize="1.125rem"
-              fontWeight="500"
-              display={aside4}
-            >
-              With Teams free, you get: Unlimited one-on-one meetings <br /> for
-              up to 30 hours. Unlimited group meetings for up to 60 minutes.
-            </Typography>
+            <motion.span whileHover={{ scale: 1.03 }}>
+              <Typography
+                className="animate-faq"
+                fontFamily="Space Grotesk"
+                fontSize="1.125rem"
+                fontWeight="500"
+                display={aside4}
+              >
+                With Teams free, you get: Unlimited one-on-one meetings <br />{" "}
+                for up to 30 hours. Unlimited group meetings for up to 60
+                minutes.
+              </Typography>
+            </motion.span>
           </Stack>
         </Stack>
         <img
