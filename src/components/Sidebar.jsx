@@ -5,7 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Sidebar = ({ display }) => {
   return (
     <div>
-      <Box display={{ sm: "none" }}>
+      <Box display={{ sm: "none" }} className="position-side">
         <Stack
           className="sidebar-menu"
           direction="column"
